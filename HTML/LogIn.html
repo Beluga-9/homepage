@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/LogIn.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Common.css">
+    <script>
+        function main_page() {
+            location.href='Main.html';
+        }
+        function sign_in_page() {
+            location.href='SignIn.html';
+        }
+        function board_page() {
+            location.href='SignIn.html';
+        }
+        function sign_in_page() {
+            location.href='SignIn.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>최준아의 홈페이지입니다.</h1>
+    </header>
+
+    <section>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>로그인</legend>
+                    <label>
+                        아이디<br>
+                        <input type="text" name="id" required>
+                    </label><br>
+                    <label>
+                        비밀번호<br>
+                        <input type="password" name="pw" required>
+                    </label><br>
+                    <input type="button" name="log_in" value="확인" onclick="main_page()">
+                    <input type="reset" name="reset" value="취소">
+                    <input type="button" name="sign_in" value="회원 가입" onclick="sign_in_page()">
+                </fieldset>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>문서명 : 프론트엔드 기초</p>
+        <p>작성일 : 2021년 12월 09일</p>
+        <p>저작권 : copyright@2021 최준아</p>
+    </footer>
+</body>
+</html>

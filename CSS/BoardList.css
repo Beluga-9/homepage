@@ -1,0 +1,18 @@
+.num,.date{
+    text-align: center;
+}
+
+.title:hover{
+    text-decoration: underline;
+}
+
+table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #444444;
+}
+
+th, td {
+    border: 1px solid #444444;
+}

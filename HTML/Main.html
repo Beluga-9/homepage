@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Main.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Common.css">
+    <script>
+        function log_in_page() {
+            location.href='LogIn.html';
+        }
+        function sign_in_page() {
+            location.href='SignIn.html';
+        }
+        function board_list_page() {
+            location.href='BoardList.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>최준아의 홈페이지입니다.</h1>
+    </header>
+
+    <section>
+        <article>
+            <div>
+                <ul>
+                    <li onclick="board_list_page()">자유 게시판</li>
+                    <li onclick="board_list_page()">Q&A</li>
+                </ul>
+            </div>
+            <img src="../img/MainImage.jpg">
+            <div class="btn">
+                <form>
+                    <input type="button" name="login" value="로그인" onclick="log_in_page()">
+                    <input type="button" name="signin" value="회원가입" onclick="sign_in_page()">
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>문서명 : 프론트엔드 기초</p>
+        <p>작성일 : 2021년 12월 09일</p>
+        <p>저작권 : copyright@2021 최준아</p>
+    </footer>
+    
+</body>
+</html>

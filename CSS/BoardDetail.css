@@ -1,0 +1,25 @@
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+.group{
+    display: flex;
+    flex-direction: row;
+}
+
+h4{
+    width: 100px;
+}
+
+p{
+    width: 650px;
+}
+
+div.document{
+    margin: 50px;
+    border: 2px black solid dashed;
+}

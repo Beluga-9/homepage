@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/SignIn.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Common.css">
+    <script>
+        function main_page() {
+            location.href='Main.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>최준아의 홈페이지입니다.</h1>
+    </header>
+
+    <section>
+        <article>
+            <form>
+                <fieldset class="essential">
+                    <legend>필수 정보</legend>
+                    <label>아이디 : <input type="text" name="id" required></label><br>
+                    <label>비밀번호 : <input type="password" name="pw" required></label><br>
+                    <label>확인 비밀번호 : <input type="password" name="pw2" required></label><br>
+                    <label>이름 : <input type="text" name="name" required></label><br>
+                    <label>이메일 : <input type="email" name="email" required></label><br>
+                    <label>전화번호 : <input type="tel" name="phone" required></label><br>
+                </fieldset>
+
+                <fieldset class="additional">
+                    <legend>추가 정보</legend>
+                    <label>나이 : <input type="number" name="age" min="1" max="130"></label><br>
+                    <label>
+                        성별 : 
+                        <input type="radio" name="sex" value="male" checked>남
+                        <input type="radio" name="sex" value="female">여
+                    </label><br>
+                    <label>
+                        취미 : 
+                        <input type="checkbox" name="hobby" value="sports">운동
+                        <input type="checkbox" name="hobby" value="music">음악
+                        <input type="checkbox" name="hobby" value="drawing">그림
+                        <input type="checkbox" name="hobby" value="game">게임
+                        <input type="checkbox" name="hobby" value="singing">노래
+                        <input type="checkbox" name="hobby" value="reading">독서
+                    </label><br>
+                    <label>
+                        직업 : 
+                        <select>
+                            <option value="programmer">개발자</option>
+                            <option value="teacher">선생님</option>
+                            <option value="soldier">군인</option>
+                            <option value="student">학생</option>
+                            <option value="none">무직</option>
+                        </select>
+                    </label><br>
+                    <label>
+                        자기소개<br>
+                        <textarea cols="30" rows="5"></textarea>
+                    </label><br>
+                </fieldset>
+
+                <input type="submit" name="sign_in" value="회원 가입" onclick="main_page()">
+                <input type="reset" name="reset" value="다시 작성">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>문서명 : 프론트엔드 기초</p>
+        <p>작성일 : 2021년 12월 09일</p>
+        <p>저작권 : copyright@2021 최준아</p>
+    </footer>
+</body>
+</html>

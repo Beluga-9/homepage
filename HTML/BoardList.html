@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoardList</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/BoardList.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Common.css">
+    <script>
+        function board_detail_page(){
+            location.href='BoardDetail.html';
+        }
+        function main_page() {
+            location.href='Main.html';
+        }
+        function board_edit_page() {
+            location.href='BoardEdit.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>최준아의 홈페이지입니다.</h1>
+    </header>
+
+    <section>
+        <article>
+            <table>
+                <caption>자유 게시판</caption>
+                <thead>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="num">05</td>
+                        <td class="title" onclick="board_detail_page()">아이나비 블랙박스 QXD7000 출장장착 해드립니다.</td>
+                        <td>dnmts</td>
+                        <td class="date">2021.12.09.</td>
+                    </tr>
+                    <tr>
+                        <td class="num">04</td>
+                        <td class="title">디스퀘어드 루키진8 쿨가이46</td>
+                        <td>순리대로 하자</td>
+                        <td class="date">2021.05.24.</td>
+                    </tr>
+                    <tr>
+                        <td class="num">03</td>
+                        <td class="title">관리 잘 된 더뉴19년식 pcx 맷블랙 팔아요</td>
+                        <td>호시호시</td>
+                        <td class="date">2021.05.03.</td>
+                    </tr>
+                    <tr>
+                        <td class="num">02</td>
+                        <td class="title">YF쏘나타 사제 듀얼머플러 급처분</td>
+                        <td>AlPacinoo</td>
+                        <td class="date">2021.01.18.</td>
+                    </tr>
+                    <tr>
+                        <td class="num">01</td>
+                        <td class="title">중고나라 통합 운영정책(2021.10.20 개정)</td>
+                        <td>중나중나지기</td>
+                        <td class="date">2020.12.04.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="num">page 01</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <form>
+                <input type="button" value="메인화면 돌아가기" onclick="main_page()">
+                <input type="button" value="글 작성" onclick="board_edit_page()">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>문서명 : 프론트엔드 기초</p>
+        <p>작성일 : 2021년 12월 09일</p>
+        <p>저작권 : copyright@2021 최준아</p>
+    </footer>
+</body>
+</html>
